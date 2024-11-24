@@ -18,28 +18,28 @@ export const LoadingAnimation = () => {
           animate={{ opacity: 1 }}
           transition={{ repeat: Infinity, duration: 1, repeatType: "reverse" }}
         >
-          > INITIALIZING ASTRONOMICAL CALCULATIONS...
+          &gt; INITIALIZING ASTRONOMICAL CALCULATIONS...
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ repeat: Infinity, duration: 1, delay: 0.2, repeatType: "reverse" }}
         >
-          > COMPUTING LUNAR TRAJECTORIES...
+          &gt; COMPUTING LUNAR TRAJECTORIES...
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ repeat: Infinity, duration: 1, delay: 0.4, repeatType: "reverse" }}
         >
-          > ANALYZING SOLAR POSITIONS...
+          &gt; ANALYZING SOLAR POSITIONS...
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ repeat: Infinity, duration: 1, delay: 0.6, repeatType: "reverse" }}
         >
-          > CALCULATING ECLIPSE PARAMETERS...
+          &gt; CALCULATING ECLIPSE PARAMETERS...
         </motion.div>
         <motion.div 
           className="flex items-center gap-2"

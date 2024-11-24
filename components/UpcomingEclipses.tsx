@@ -63,7 +63,7 @@ const UpcomingEclipses: React.FC<UpcomingEclipsesProps> = ({ eclipses }) => {
             </div>
             <div className="text-green-400">{dayjs(eclipse.date).format('YYYY-MM-DD HH:mm:ss')}</div>
             <div className="text-yellow-400 mt-2">
-              <span className="text-green-400">> </span>
+              <span className="text-green-400"> </span>
               {formatCountdown(eclipse.date)}
             </div>
           </motion.div>
