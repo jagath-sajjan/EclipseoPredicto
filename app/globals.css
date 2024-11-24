@@ -2,20 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-gray-900 text-green-400 font-mono;
 }
+
+input[type="date"] {
+  @apply bg-gray-800 text-green-400 p-2 rounded border border-green-400/30;
+  color-scheme: dark;
+}
+
+button {
+  @apply bg-green-400 text-gray-900 px-4 py-2 rounded hover:bg-green-500 transition-colors duration-200 disabled:opacity-50;
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px
+;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-green-400/30 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-green-400/50;
+}
+
